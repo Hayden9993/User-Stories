@@ -3,13 +3,13 @@
     internal class Program
     {
         private static string input;
-        private static Tour tours;
+        //private static Tour tours;
 
         static void Main(string[] args)
         {
             //load tour profile
 
-            tours.append(tour);
+            //tours.append(tour);
 
             //Open the main menu
             MainMenu();
@@ -31,7 +31,7 @@
                 case "2": //add tour
                     Console.Clear();
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a name:\n");
-                    tours.Append(new Tour());
+                    //tours.Append(new Tour());
                     break;
 
                 case "3": //exit
