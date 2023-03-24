@@ -10,7 +10,6 @@ namespace HeavenlyVisions
 {
     internal class Customer
     {
-        private int id;
         private string name;
         private string phone;
         private string email;
@@ -20,7 +19,6 @@ namespace HeavenlyVisions
         public string Phone { get => phone; set => phone = value; }
         public string Email { get => email; set => email = value; }
         public string Notes { get => notes; set => notes = value; }
-        public int Id { get => id; set => id = value; }
 
         public Customer(string name, string phone, string email) 
         {
@@ -51,10 +49,6 @@ namespace HeavenlyVisions
         public void SetNotes(String notes)
         {
             this.notes = notes;
-        }
-        public void setId(int id)
-        {
-            this.id = id;
         }
         public string Display()
         {
