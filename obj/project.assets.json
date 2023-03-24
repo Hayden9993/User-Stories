@@ -8,7 +8,7 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\smitht7\\.nuget\\packages\\": {},
+    "C:\\Users\\brooha1\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -17,14 +17,14 @@
       "projectUniqueName": "H:\\User-Stories\\HeavenlyVisions.csproj",
       "projectName": "HeavenlyVisions",
       "projectPath": "H:\\User-Stories\\HeavenlyVisions.csproj",
-      "packagesPath": "C:\\Users\\smitht7\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\brooha1\\.nuget\\packages\\",
       "outputPath": "H:\\User-Stories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\smitht7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\brooha1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
