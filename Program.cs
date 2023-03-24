@@ -4,7 +4,7 @@
     {
         private static string input;
         private static Tour tours;
-        
+
         static void Main(string[] args)
         {
             //load tour profile
@@ -48,7 +48,7 @@
 
         static void ViewTours() //view all tours
         {
-                
+
         }
     }
 }
