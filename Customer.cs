@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -48,6 +49,33 @@ namespace HeavenlyVisions
         public void SetNotes(String notes)
         {
             this.notes = notes;
+        }
+        public string Display()
+        {
+            if (notes != null)
+            {
+                return $"{name} {phone} {email} {notes}";
+            }
+            else
+            {
+                return $"{name} {phone} {email}";
+            }
+        }
+        public string getName()
+        {
+            return name;
+        }
+        public string getPhone()
+        {
+            return phone;
+        }
+        public string getEmail()
+        {
+            return email;
+        }
+        public string getNotes()
+        {
+            return notes;
         }
     }
 }
