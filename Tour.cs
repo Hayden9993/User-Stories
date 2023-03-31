@@ -23,7 +23,7 @@ namespace HeavenlyVisions
         private string time;
         private string date;
         private string location;
-        private Customer[] customers;
+        private List<Customer> customers = new List<Customer>();
         private string description = " ";
 
         public Tour(string name, string date, string time, string location)
@@ -48,9 +48,9 @@ namespace HeavenlyVisions
         public string Date { get => date; set => date = value; }
         public string Location { get => location; set => location = value; }
 
-        public static void addCustomer(Customer customer)
+        public void addCustomer(Customer customer)
         {
-            customers.Append(customer);
+            customers.Add(customer);
         }
         public static void removeCustomer()
         {
@@ -58,23 +58,23 @@ namespace HeavenlyVisions
 
             //figure out how to remove from an array
         }
-        public static void setDescription(string description)
+        public void setDescription(string description)
         {
             this.description = description;
         }
-        public static void setDate(string date)
+        public void setDate(string date)
         {
             this.date = date;
         }
-        public static void setTime(string time)
+        public void setTime(string time)
         {
             this.time = time;
         }
-        public static void setLocation(string location)
+        public void setLocation(string location)
         {
             this.location = location;
         }
-        public static void setName(string name)
+        public void setName(string name)
         {
             this.name = name;
         }
@@ -90,7 +90,22 @@ namespace HeavenlyVisions
         public string getDate() { return date; }
         public string getTime() { return time; }
         public string getDescription() { return description; }
-        public string getCustomers() { return customers}
+        public List<Customer> getCustomers()
+        {
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+            customers.Add(new Customer("John Smith", "0800838383", "john.smith@gmail.com"));
+
+            return customers; 
+        }
 
 
     }

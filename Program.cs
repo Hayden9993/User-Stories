@@ -5,7 +5,7 @@ namespace HeavenlyVisions
     internal class Program
     {
         private static string input;
-        private static Tour tours;
+        private static List<Tour> tours = new List<Tour>();
 
         static void Main(string[] args)
         {     
@@ -39,20 +39,25 @@ namespace HeavenlyVisions
                     
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a name:\n");
                     name = Console.ReadLine();
+                    Console.Clear();
 
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a date:\n");
                     date = Console.ReadLine();
+                    Console.Clear();
 
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a time:\n");
                     time = Console.ReadLine();
+                    Console.Clear();
 
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a location:\n");
                     loc = Console.ReadLine();
+                    Console.Clear();
 
                     Console.WriteLine("Heavenly Visions Tour Manager\n\nPlease Enter a description:\n");
                     desc = Console.ReadLine();
+                    Console.Clear();
 
-                    tours.Append(new Tour(name, date, time, loc, desc));
+                    tours.Add(new Tour(name, date, time, loc, desc));
                     break;
 
                 case "3": //exit
@@ -70,12 +75,12 @@ namespace HeavenlyVisions
         static void ViewTours() //view all tours
         {
             Console.Clear();
-            Console.WriteLine("Heavenly Visions Tour Manager\n\n")
+            Console.WriteLine("Heavenly Visions Tour Manager\n\n");
             foreach (Tour tour in tours) 
             {
-                Console.WriteLine("Name: " + tour.GetName() + "\n\tLocation: " + tour.GetLocation() + "\n\tDate: " + tour.GetDate()
-                + "\n\tTime: " + tour.GetTime() + "\n\tDescription: " + tour.GetDescription() + "Customers: \n");
-                foreach (Customer customer in tour.GetCustomers()) 
+                Console.WriteLine("Name: " + tour.getName() + "\n\tLocation: " + tour.getLocation() + "\n\tDate: " + tour.getDate()
+                + "\n\tTime: " + tour.getTime() + "\n\tDescription: " + tour.getDescription() + "Customers: \n");
+                foreach (Customer customer in tour.getCustomers()) 
                 {
                     Console.WriteLine("\t\tName: " + customer.getName() + "\n\t\t\tPhone: " + customer.getPhone() + "\n\t\t\tEmail: "
                     + customer.getEmail() + "\n\t\t\tNotes: " + customer.getNotes() + "\n");
