@@ -9,8 +9,10 @@ using System.Xml.Linq;
 
 namespace HeavenlyVisions
 {
+    
     internal class Tour
     {
+        public List<Tour> tours1 = new List<Tour>();
         private string name;
         private string time;
         private string date;
@@ -18,7 +20,7 @@ namespace HeavenlyVisions
         private Customer[] customers;
         private string description = " ";
 
-        public classTour(string name, string date, string time, string location)
+        public Tour(string name, string date, string time, string location)
         {
             this.name = name;
             this.date = date;
@@ -26,7 +28,7 @@ namespace HeavenlyVisions
             this.time = time;
         }
 
-        public classTour(string name, string date, string time, string location, string description)
+        public Tour(string name, string date, string time, string location, string description)
         {
             this.name = name;
             this.date = date;
@@ -46,6 +48,8 @@ namespace HeavenlyVisions
         }
         public static void removeCustomer()
         {
+            
+            
             //figure out how to remove from an array
         }
         public static void setDescription(string description)
@@ -69,12 +73,18 @@ namespace HeavenlyVisions
             this.name = name;
         }
 
-        public string getName(); return name;
-        public string getLocation();
-        public string getDate();
-        public string getTime();
-        public string getDescription();
-        public string getCustomers();
+        public string getName()
+        {
+            return name;
+        }
+        public string getLocation()
+        {
+            return location;
+        }
+        public string getDate() { return date; }
+        public string getTime() { return time; }
+        public string getDescription() { return description; }
+        public string getCustomers() {return customers}
 
 
     }
